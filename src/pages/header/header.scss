@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  position: relative;
+  padding-block: 0;
+  position: relative;
+
+  .header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+  }
+  .header-people {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding-bottom: 2rem;
+    p {
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+  }
+  .header-banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.header-description {
+  margin: rem 0;
+  p {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 75%;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    input {
+      width: 65%;
+      padding: 1.5rem;
+      border-radius: 0.1rem;
+      background-color: #052d56;
+      color: #3d6184;
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    button {
+      padding: 1.6rem 2rem;
+      background-color: var(--btn-bg);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column-reverse;
+    row-gap: 1rem;
+    .header-content {
+      text-align: center;
+      width: 100%;
+      h1 {
+        margin-bottom: 2rem;
+      }
+      p {
+        margin: 0 auto;
+      }
+      form {
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .header-people {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .header {
+    .header-content {
+      p {
+        max-width: 100%;
+        font-size: 1rem;
+      }
+      form {
+        flex-direction: column;
+        row-gap: 1rem;
+        input {
+          width: 100%;
+          padding: 1rem;
+        }
+        button {
+          padding: 1rem;
+          width: 100%;
+        }
+      }
+    }
+    .header-people {
+      flex-direction: column;
+      row-gap: 0.7rem;
+    }
+  }
+}

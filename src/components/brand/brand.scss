@@ -1,0 +1,14 @@
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .brand-img {
+    flex-grow: 1;
+    flex-basis: 100;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
