@@ -2,7 +2,7 @@ import React from "react";
 
 import "./header.scss";
 
-import banner from "../../assets/ai.png";
+import banner from "../../assets/ai.svg";
 import people from "../../assets/people.png";
 
 const Header = () => {

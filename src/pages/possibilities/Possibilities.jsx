@@ -2,7 +2,7 @@ import React from "react";
 
 import "./possibilities.scss";
 
-import banner from "../../assets/possibility.png";
+import banner from "../../assets/possibility.svg";
 
 const Possibilities = () => {
   return (
